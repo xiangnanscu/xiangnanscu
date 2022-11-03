@@ -4,7 +4,13 @@
 - 💞️ I’m looking to collaborate on web devs.
 - 📫 How to reach me: 280145668@qq.com
 
-<!---
-xiangnanscu/xiangnanscu is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+# 各种疑难解决记录
+## 重置win10网络条件
+突然git和sshuttle各种不好使了, 例如git kex_exchange_identification: Connection closed by remote host, 网上搜了一下,运行下列命令, 重启电脑, 搞定
+```sh
+netsh winsock reset
+netsh int ip reset
+ipconfig /release
+ipconfig /renew
+ipconfig /flushdns
+```
